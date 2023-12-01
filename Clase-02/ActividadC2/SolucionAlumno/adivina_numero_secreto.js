@@ -1,8 +1,11 @@
 const readlineSync = require("readline-sync");
+const {generarNumRandom} = require('/Alex/Cursos/UTN/utnnodejs/Clase-02/ActividadC2/SolucionAlumno/randomNum')
 
 const adivinar = () => {
-  const numeroRandom = Math.floor(Math.random() * 100) + 1;
+  // const numeroRandom = Math.floor(Math.random() * 100) + 1;
   // console.log(numeroRandom);
+  console.log("Consigna del juego: Adivina un numero entre 0 y 100 😁")
+  const numeroRandom = generarNumRandom();
   do {
     const numeroUsuario = parseInt(
       readlineSync.question("Ingrese un numero: ")
@@ -25,8 +28,9 @@ const adivinar = () => {
       }
     } else{
           console.log(`Correcto, ${numeroRandom} era el numero!!`);
+          break;
       }
-    console.log(`diferencia: ${diferencia}`)
+    // console.log(`diferencia: ${diferencia}`)
   } while (true);
 };
 
