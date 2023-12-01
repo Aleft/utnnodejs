@@ -1,5 +1,5 @@
 const readlineSync = require("readline-sync");
-const {generarNumRandom} = require('/Alex/Cursos/UTN/utnnodejs/Clase-02/ActividadC2/SolucionAlumno/randomNum')
+const {generarNumRandom} = require('./randomNum')
 
 const adivinar = () => {
   // const numeroRandom = Math.floor(Math.random() * 100) + 1;
