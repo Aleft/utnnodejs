@@ -109,6 +109,65 @@ GET,POST, PUT/PATCH, DELETE
 ----
 
 
+VERSIONES
+
+Es importante tener 2 versiones de la api creada paraque el consumidor tenga tiempo de adaptarse a nuevos disenios y cambios, V1 V2 por ejemplo.
+
+path/V1/PRODUCTOS
+path/V2/PRODUCTOS
+
+
+----
+
+Paginacion
+
+Al tener grandes volumenes de datos es importante crear paginas, por ejemplo que por paginas se muestren 20 o 50 paginas.
+Tenemos paremtros de "limit" y "offset", limit para que muestre una maxima cantidad determinada y offset para elegir un rango de resultados
+que determinemos, por ejemplo en la pagina uno podemos mostrar un maximo de 10 resultados y que el offset sea desde el resultado 11 al 20.
+
+------
+
+Formatos soportados
+
+La mayoria utiliza JSON
+
+-----------
+
+Utilizar mensajes de error adecuados
+
+Siempre es bueno mostrar codigos de error para saber identificar problemas.
+
+----------
+
+Documentar API RESTFUL
+
+Swagger  nos ofrece reglas, herramientas y especificaciones que nos ayudan a documentar. Para la especificacion se puede trabajar con json o yaml.
+Swagger UI: transforma una especificacion swagger/ OpenApi en una pagina web mas amigable.
+Swagger Editor: Editor web de especificaciones swagger / OpenApi. Tiene una vista de la especificaion a la izquierda y la vista UI a la derecha. editor.swagger.io/
+
+Podemos diseniar un servicio-microservicio como api restful.
+
+
+---------
+
+FrontEnd vs Backend
+
+Lo que hay en frontend se desarrolla para el usuario final en js usando react, nos permite desarrollar en forma sencilla y js en el navegador.
+El frontend se conecta al backend mediante apis/servicos.
+La conexion entre la api y la db se considera Backend.
+
+
+-----
+
+ExpressJS
+
+Permite estructurar apis de forma sencilla.
+
+
+
+
+
+
 
 
 */
