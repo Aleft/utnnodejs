@@ -24,4 +24,16 @@ Enrutamiento en Express
 
 utiliza enrutamiento para definir las acciones que se deben ejecutar segun la ruta (url) y el metodo http de una solicitud
 
+
+--------------------------------
+
+Get - query parameters
+
+Post , put, delete, patch = body parameter
+
+---------------------------------
+
+Query parameters:
+
+SI queresmos filtrar por una categoria podemos hacer: req, query, caterogia;
 */
