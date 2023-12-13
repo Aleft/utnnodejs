@@ -36,4 +36,12 @@ Post , put, delete, patch = body parameter
 Query parameters:
 
 SI queresmos filtrar por una categoria podemos hacer: req, query, caterogia;
+
+
+---------------------------------
+
+Libreria JOI
+
+Se usa para validar, se instala con "npm install joi"
+
 */
