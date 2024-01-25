@@ -23,4 +23,24 @@ router.post('/', async(req, res) => {
     }
 });
 
+router.put("/:id", async (req, res) => {
+    try {
+        const vendedor = await Vendedor.findByIdAndUpdate(req.params.id, req.body, {
+            new: true,
+        });
+        res.json(vendedor);
+    } catch (error) {
+        res.status(500).json({error: "Error al actualizar el vendedor"});
+    }
+});
+
+router.delete("/:id", async(req, res) => {
+    try{
+        await Vendedor.findByIdAndDelete(req.params.id);
+        res.json({message: 'Vendedor eliminado correctamente'});
+    } catch (error){
+        res.status(500).json({error: 'Error al eliminar el vendedor'});
+    }
+});
+
 module.exports = router;
