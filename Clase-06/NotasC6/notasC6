@@ -1,0 +1,30 @@
+Seguridad en aplicaciones:
+
+Es importante mantener nuestra app actualizada ya que los npm instalados pueden tener vulnerabiliades
+
+Hay diferentes tipos:
+-XSS: Cuando los atacantes inyectan codigo malicioso en las resuestas de la API.
+  Permite que roben datos o realicen acciones en nombre del usuario legitimo.
+-Code injection: Injectan codigo malicioso en la entrada de la API. Les permite 
+  cambiar codigo de nuestra app o SQL sin que nos demos cuenta.
+-DDoS: Tiene como objetvo abrumar la API con multiples solicitudes, causa interrupcion
+  del servicio.
+-Information leakage: Ocurre cuando la API revela detalles confidenciales en sus respuestas.
+-Autenticacion y autorizacion inadecuadas: El uso de autenticacion debiles o mal configurados
+  puede permitir el acceso no autorizado a recursos protegidos.
+
+
+COMO IDENTIFICAR UN PROBLEMA DE SEGURIDAD:
+-Realizar pruebas de penetracion: Simula ataques para descubrir puntos debiles.
+-Revisar el codigo fuente y la configuracion: Revisar el codigo minuciosamente.
+-Monitorear y analizar los registros de actividad: Los registros de actividad de la api
+   pueden proporcionar pistas sobre intentos de ataque.
+-Realizar analisis estatico y dinamico del codigo: Herramientas para identificar posibles
+  vulnerabilidades.
+-Seguir las mejores practicas de seguridad: Seguir las mejores practicas.
+-Participar en programas de recompensas de errores (bug bounty programs): Algunas organizaciones
+  ofrecen programas de recompensas por encontrar y reportar problemas de seguridad en sus apis.
+
+
+
+QUE ES LA AUTENTICACION/AUTORIZACION:
